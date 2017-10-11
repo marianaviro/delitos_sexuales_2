@@ -24,3 +24,5 @@ committed (or registered). Although it was expected to find more records with wo
 interesting contrast between the number of crimes committed on Friday versus the number of crimes committed on Saturday. 
 
 ![Second visualization](https://cdn.rawgit.com/marianaviro/delitos_sexuales_2/7c6eaa8a/img/static.png)
+
+More updates coming soon! :star2:
