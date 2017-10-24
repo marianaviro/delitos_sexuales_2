@@ -23,7 +23,7 @@ interesting contrast between the number of crimes committed on Friday versus the
 ![Second visualization](https://cdn.rawgit.com/marianaviro/delitos_sexuales_2/7c6eaa8a/img/static.png)
 
 
-##Why it's better to be rude than talking back to someone on the street
+## Why it's better to be rude than talking back to someone on the street
 *See the demo [here](https://marianaviro.github.io/delitos_sexuales_3/).*
 
 In my third approach I had to visualize network data. As I wanted to keep working on this project, I managed to derive two
