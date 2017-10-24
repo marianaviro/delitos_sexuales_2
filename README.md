@@ -1,10 +1,7 @@
 # Sexual Crimes in Colombia
 The Criminality Information Group of the Colombian Police recently published more than 27,000 [records of sexual
 crimes commited during the year 2016](https://www.datos.gov.co/Seguridad-y-Defensa/Delitos-Sexuales-2016/3j7m-zgyi).
-Based on this information –and as part of [a course on Visual Analytics](http://johnguerra.co/classes/visual_analytics_fall_2017/)–, I decided to start a small project in order to visualize the data and extract insights that
-may (or may not) be useful in addressing the issue. As these conclusions depend entirely on the trustworthiness of the raw
-data and a small amount of pre processing, **they should not be taken very seriously**. The following are some interesting
-findings:
+Based on this information –and as part of [a course on Visual Analytics](http://johnguerra.co/classes/visual_analytics_fall_2017/)–, I decided to start a small project in order to visualize the data and extract insights that may (or may not) be useful in addressing the issue. As these conclusions depend entirely on the trustworthiness of the raw data and a small amount of pre processing, **they should not be taken very seriously**. Rather, this project should show how useful an adequate process of data collection would be in tackling these crimes. The following are some interesting findings:
 
 ## Why you shouldn't go out on the first of each month
 *See the demo [here](https://marianaviro.github.io/delitos_sexuales/).*
