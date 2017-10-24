@@ -25,4 +25,17 @@ interesting contrast between the number of crimes committed on Friday versus the
 
 ![Second visualization](https://cdn.rawgit.com/marianaviro/delitos_sexuales_2/7c6eaa8a/img/static.png)
 
+
+##Why it's better to be rude than talking back to someone on the street
+*See the demo [here](https://marianaviro.github.io/delitos_sexuales_3/).*
+
+In my third approach I had to visualize network data. As I wanted to keep working on this project, I managed to derive two
+datasets (one for nodes and one for links) based on information about the transportation methods that both victims and
+assailants were using when the crime was commited. I then implemented an adjacency matrix in which the columns show the
+attacker's transportation method and the rows match the victim's one. The most important finding obtained from this process
+was the alarming quantity of crimes commited when both the assailant and victim were moving on foot. Also, it was interesting
+to see the correspondence between passenger and driver as attacker and victim (or vise versa).
+
+![Third visualization](https://cdn.rawgit.com/marianaviro/delitos_sexuales_3/master/img/static.png)
+
 More updates coming soon! :star2:
