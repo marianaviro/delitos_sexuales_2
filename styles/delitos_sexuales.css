@@ -1,14 +1,214 @@
-html, body{
+*, html, body {
   margin: 0;
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 body {
   font-family: 'Oswald', sans-serif;
+  font-size: 1em;
   color: #2F2F2F;
   background-color: #212121;
-  /*background-color: #fff;*/
+  display: block;
+}
+
+svg {
+  background-color: #446DF6;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4em;
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  color: #7f7f7f;
+}
+
+.heading {
+  background-color: #212121;
+  width: 100%;
+  height: 90%;
+}
+
+.title {
+  padding: 15% 20% 0% 20%;
+}
+
+.heading .title {
+  text-align: center;
+}
+
+.description {
+  padding: 5% 22% 0% 22%;
+}
+
+.description p {
+  text-align: center;
+  color: #4F4F4F;
+}
+
+.divide {
+  width: 100%;
+  height: 30%;
+  background-color: #446DF6;
+}
+
+.section {
+  background-color: #F49D37;
+  height: 100%;
+  color: #fff;
+}
+
+.section h2 {
+  font-size: 3em;
+}
+
+.section p {
+  color: #fff;
+}
+
+.graphic {
+  padding-bottom: 20%;
+  background-color: #446DF6;
+  height: 90%;
+}
+
+.graphic h1 {
+  font-size: 6em;
+  line-height: 0.7em;
+}
+
+.graphic h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+}
+
+.graphic span {
+  position: relative;
+  z-index: 100;
+}
+
+.graphic span::before {
+  border-bottom: 0.45em solid rgba(255,255,255,0.5);
+  content: "";
+  left: 0;
+  line-height: 1em;
+  margin-top: calc(0.2em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -100;
+}
+
+.graphic .description {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.graph {
+  background-color: #446DF6;
+  height: 75%;
+}
+
+.zigzag {
+    position: relative;
+}
+
+.zigzag .title h2 span {
+  position: relative;
+  z-index: 100;
+}
+
+/* .zigzag .title h2 span::before {
+  border-bottom: 0.45em solid rgba(86,3,173, 0.5);
+  content: "";
+  left: 0;
+  line-height: 1em;
+  margin-top: calc(0.2em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: -100;
+} */
+
+.zigzag::after {
+    background: linear-gradient(-30deg, #212121 10px, transparent 0), linear-gradient(30deg, #212121 10px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 20px 20px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.section.graphic.zigzag::after {
+  background: linear-gradient(-30deg, #F49D37 10px, transparent 0), linear-gradient(30deg, #F49D37 10px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+}
+
+.social {
+  text-align: center;
+  font-size: 3em;
+  padding-top: 5%;
+}
+
+.social span {
+  margin: 0 20px;
+  /* color: #446DF6; */
+}
+
+.social {
+  position: relative;
+  z-index: 100;
+}
+
+.social::after {
+  border-bottom: 1em solid rgba(215, 38, 56, 0.5);
+  content: "";
+  left: 0;
+  line-height: 1em;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: -100;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #212121;
+  font-size: 0.5em;
+  font-weight: 100;
+}
+
+.footer p {
+  color: #4f4f4f;
+}
+
+.footer p a {
+  color: #6f6f6f;
 }
 
 .axis line {
@@ -22,70 +222,6 @@ body {
 
 .axis + .axis g text {
   display: none;
-}
-
-svg{
-  background-color: #fff;
-  font-size: 12px;
-  width: 100% !important;
-  text-align: center;
-  padding: 50px;
-}
-
-h1{
-  font-weight: 600;
-  font-size: 60px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 0;
-  /*color: #212121*/
-}
-
-h2{
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-  color: #4F4F4F;;
-  margin-top: 0;
-  /*color: #212121*/
-}
-
-p{
-  color: #7f7f7f;
-}
-
-footer{
-  text-align: center;
-  padding-top: 15px;
-}
-
-#divide{
-  height: 70px;
-  background-color: rgb(31, 119, 180);
-}
-
-#description p{
-  text-align: center;
-  color: #4F4F4F;
-}
-
-i a{
-  color: rgb(31, 119, 180);
-}
-
-#description{
-  margin-top: 40px;
-  margin-bottom: 130px;
-}
-
-#header{
-  height: 150px;
-}
-
-#title{
-  /*background-color: #3f007d;*/
-  background-color: #212121;
-  /*background-color: #fff;*/
 }
 
 div.tooltip {

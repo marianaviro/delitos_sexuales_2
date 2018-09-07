@@ -1,7 +1,9 @@
-var width = 1080,
-    height = 500,
-    outerRadius = height / 2 - 10,
-    innerRadius = 120;
+var div = document.getElementsByClassName('graph');
+
+var width = div[0].offsetWidth;
+    height = div[0].offsetHeight;
+    outerRadius = height * 0.5,
+    innerRadius = height * 0.2;
 
 var angle = d3.time.scale()
     .range([0, 2 * Math.PI]);
@@ -9,7 +11,9 @@ var angle = d3.time.scale()
 var radius = d3.scale.linear()
     .range([innerRadius, outerRadius]);
 
-var z = d3.scale.category20();
+var z = d3.scale.category10();
+
+console.log(z);
 
 var stack = d3.layout.stack()
     .offset("zero")
@@ -31,7 +35,7 @@ var area = d3.svg.area.radial()
     .innerRadius(function(d) { return radius(d.y0); })
     .outerRadius(function(d) { return radius(d.y0 + d.y); });
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".graph").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
