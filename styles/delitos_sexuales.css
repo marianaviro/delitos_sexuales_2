@@ -211,13 +211,17 @@ p {
   color: #6f6f6f;
 }
 
+g text {
+  fill: #FFF;
+}
+
 .axis line {
-  stroke: #000;
+  stroke: #FFF;
 }
 
 .axis path {
   fill: none;
-  stroke: #000;
+  stroke: #FFF;
 }
 
 .axis + .axis g text {

@@ -13,6 +13,10 @@ var radius = d3.scale.linear()
 
 var z = d3.scale.category10();
 
+var color = d3.scale.linear().domain([0,3])
+      .interpolate(d3.interpolateHcl)
+      .range([d3.rgb("#FFC300"), d3.rgb('#C70039')]);
+
 console.log(z);
 
 var stack = d3.layout.stack()
@@ -70,7 +74,7 @@ d3.csv("./data/delitossexuales.csv", type, function(error, data) {
     .enter().append("path")
       .attr("class", "layer")
       .attr("d", function(d) { return area(d.values); })
-      .style("fill", function(d, i) { return z(i); });
+      .style("fill", function(d, i) { return color(i); });
 
   svg.selectAll(".axis")
       .data(d3.range(angle.domain()[1]))
@@ -97,7 +101,7 @@ d3.csv("./data/delitossexuales.csv", type, function(error, data) {
       .attr("x", width - 18)
       .attr("width", 18)
       .attr("height", 18)
-      .style("fill", z);
+      .style("fill", color);
       legend.append("text")
       .attr("x", width - 24)
       .attr("y", 9)
